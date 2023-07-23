@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorfliper</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1em;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            padding: 20px;
+        }
+        .navcenter{
+            font-size: 1.1em;
+            font-weight: 400;
+            text-transform: capitalize;    
+    }
+    .navlinks ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .container h3{
+        padding: 100px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+    .container button{
+        display: inline-block;
+        width: 120px;
+        height: 60px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navcenter">
+            <h4>color flliper</h4>
+        </div>
+        <div class="navlinks">
+        <ul >
+            <li><a href="index.html">simpel</a></li>
+            <li><a href="hex.html">HEX</a></li>
+        </ul>
+    </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h3>Background color : <span class="color">#fff</span></h3>
+            <button class="button-click" id="button-hero">click</button>
+        </div>
+    </main>
+    <script src="hex.js"></script>
+</body>
+</html>

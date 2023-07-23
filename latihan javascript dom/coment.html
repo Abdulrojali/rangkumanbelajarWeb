@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar h3{
+        font-size: 1.5em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .navlinks ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+    }
+    .navlinks li a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-size: 1.25em;
+        font-weight: 250;
+        text-transform: capitalize;
+    }
+    .navlinks li a:hover{
+        padding: 8px 16px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        /* grid-template-rows:400px; */
+        grid-gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .gridsmain{
+        box-shadow: 0 0 1px 2px gray;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+   .gridsmain p{
+        font-size: 2.5em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: rgb(41, 41, 222);
+    }
+    .gridsmain textarea{
+        width: 200px;
+        height: 80px;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="gridsmain">
+                <p class="click">+</p>
+            </div>
+        </main>
+    </div>
+    <script src="coment.js"></script>
+</body>
+</html>

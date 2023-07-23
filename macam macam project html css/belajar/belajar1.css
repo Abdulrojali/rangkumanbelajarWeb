@@ -1,0 +1,195 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16.5px;
+    font-weight: 300;
+    text-transform: capitalize;
+ }
+ button{
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-block;
+    background-color: rgb(22, 22, 228);
+    color:white;
+    width: 80px;
+    height:35px;
+ }
+ button:hover{
+    color: whitesmoke;
+    background-color: cyan;
+    border-radius: 10px;
+ }
+ a:hover{
+    color: whitesmoke;
+    background-color: cyan;
+    border-radius: 10px;
+ }
+ a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 350;
+    padding: 8px 16px;
+    color: black;
+ }
+ .container{
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(6, 225, 105);
+ }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.navbar h3{
+    font-size:1.5em;
+    font-weight: 700;
+    text-transform:uppercase;
+}
+.navbar p{
+    font-size: .8em;
+    font-weight: 100;
+}
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 225, 105);
+}
+.headercontent{
+    width: 60%;
+}
+.headercontent , .headerteks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.headerteks h3{
+  font-size: 2em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.headerteks p{
+    font-size: .8em;
+    font-weight: 200;
+}
+main{
+    width: 100%;
+    height: 50vh;
+}
+.maincontent{
+    position: absolute;
+    margin:25px 10%;
+}
+.gridcards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap:15px;
+    width: 100%;
+    background-color:;
+}
+.gridcard{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.3);
+} 
+.gridcard img{
+    display: block;
+    width: 50%;
+    object-fit: cover;
+}
+.gridcard h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.gridcard p{
+    font-size: .8em;
+    font-weight: 200;
+}
+aside{
+    width: 100%;
+    height: 65vh;
+    background-color: gray;
+}
+aside h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 0 0 0 ;
+}
+.asidecontent{
+    position: absolute;
+    margin:10px 10%;
+}
+.aside_grids{
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-gap: ;
+    width: 90%;
+}
+.aside_grid{
+   padding: 25px;
+    box-shadow: 0 0 5px 1px white;
+}
+.aside_grid  img{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: orange;
+    margin: 0 0 5px 33px;
+}
+.aside_grid h3{
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.aside_grid p{
+    font-size: .8em;
+    font-weight: 200;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(6, 225, 105);;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .navlinks ul{
+        gap: 15px;
+    }
+    header{
+        padding: 20px 0;
+    }
+}    

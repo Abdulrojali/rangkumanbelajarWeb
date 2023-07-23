@@ -1,0 +1,339 @@
+:root {
+   --color-font: rgb(246, 246, 246);
+   --color-bg: rgb(16, 24, 32);
+   --color-btn: rgb(26, 148, 37);
+}
+
+.container {
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-bg);
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px 0;
+}
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   list-style: none;
+   font-size: 1.2em;
+   font-weight: 500;
+   text-transform: capitalize;
+   color: var(--color-font);
+}
+
+.navlinks ul {
+   display: flex;
+   gap: 40px;
+   list-style: none;
+}
+
+.navbar img {
+   display: inline-block;
+   width: 60px;
+   height: 40px;
+   border-radius: 50%;
+   border: none;
+}
+
+.navlinks li a {
+   font-size: 1.1em;
+   font-weight: 250;
+   text-transform: capitalize;
+   text-decoration: none;
+   color: var(--color-font);
+}
+
+.navlinks li a:hover {
+   border-bottom: 1px solid var(--color-font);
+}
+
+.navlinks li:nth-of-type(1) {
+   border-bottom: 1px solid var(--color-font);
+}
+
+.navlinks li:nth-of-type(2)::before {
+   content: '+';
+   padding: 5px 6px;
+   color: var(--color-font);
+}
+
+.navlinks li:nth-of-type(4)::before {
+   content: '+';
+   padding: 5px 6px;
+   color: var(--color-font);
+}
+
+.navbahasa select {
+   display: inline-block;
+   width: 200px;
+   height: 25px;
+   border: none;
+   color: var(--color-bg);
+}
+
+.navbahasa select option {
+   font-size: 1em;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: var(--color-font);
+}
+
+.mainimg {
+   width: 100%;
+   height: 70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url(https://images.unsplash.com/photo-1558899293-c6204574fcd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.contentmainimg {
+   width: 60%;
+}
+
+.contentmainimg h3 {
+   font-size: 2.3em;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: var(--color-font);
+}
+
+.mainteks {
+   width: 100%;
+   height: 50vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.teksjoin {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.teksjoin h3 {
+   font-size: 2em;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: var(--color-font);
+}
+
+.teksjoin button {
+   display: inline-block;
+   width: 80px;
+   height: 40px;
+   font-size: 1em;
+   font-weight: 400;
+   text-transform: capitalize;
+   color: var(--color-font);
+   border: none;
+   background-color: var(--color-btn);
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.sectiongrid {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sectionsatu {
+   width: 100%;
+   height: 30vh;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 10px;
+}
+
+section {
+   box-shadow: 0 0 10px 1px black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   color: var(--color-font);
+   text-align: center;
+   padding-bottom: 20px;
+   padding: 10px;
+}
+
+section h3 {
+   font-size: 1.3em;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+section p {
+   font-size: .9em;
+   font-weight: 250;
+   text-transform: capitalize;
+}
+
+.skalakami {
+   width: 100%;
+   height: 30vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 2px;
+   padding: 30px 0;
+}
+
+.skalakami h3 {
+   color: var(--color-font);
+   font-size: 2.2em;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+.skalakami button {
+   display: inline-block;
+   width: 80px;
+   height: 40px;
+   font-size: 1em;
+   font-weight: 400;
+   text-transform: capitalize;
+   color: var(--color-font);
+   border: none;
+   background-color: var(--color-btn);
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.maribergabung {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 2px;
+   padding: 50px 0;
+}
+
+.maribergabung h3 {
+   width: 50%;
+   text-align: center;
+   font-size: 3em;
+   font-weight: 600;
+   text-transform: capitalize;
+   color: var(--color-font);
+}
+
+.maribergabung .icon ul {
+   display: flex;
+   list-style: none;
+   gap: 40px;
+}
+
+.maribergabung .icon li i {
+   font-size: 1.7em;
+   font-weight: 500;
+   color: var(--color-font);
+}
+aside{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   color: var(--color-font);
+}
+.judulaside{
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+}
+.judulaside img{
+   display: inline-block;
+   width: 60px;
+   height: 40px;
+   border-radius: 100%;
+   border: none;
+}
+.judulaside h3{
+   font-size: 1.8em;
+   font-weight: 500;
+   text-transform: capitalize;
+   color: var(--color-font);
+}
+.mainaside{
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+   grid-gap: 15px;
+}
+.mainaside section h3{
+   text-align: center;
+}
+.mainaside section{
+   box-shadow: none;
+   border: none;
+}
+.mainaside section ul{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.mainaside section li a{
+   text-decoration: none;
+   color:var(--color-font);
+   font-size: 1.2em;
+   text-transform: capitalize;
+   font-weight: 250;
+   cursor: pointer;
+}
+.sosialmedia h3{
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+.sosialmedia ul{
+   list-style: none;
+   display: flex;
+   gap: 30px;
+}
+.sosialmedia li i{
+   font-size: 1.6em;
+   font-weight: 500;
+   color: var(--color-font);
+}
+.download h3{
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+.download ul{
+   list-style: none;
+   display: flex;
+   gap: 30px;
+}
+.download li i{
+   font-size: 1.6em;
+   font-weight: 500;
+   color: var(--color-font);
+}

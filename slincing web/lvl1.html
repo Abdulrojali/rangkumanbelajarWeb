@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan slincing navigasi</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: .5px solid gray;
+        }
+        .navlinks ul{
+            display: flex;
+            gap: 30px;
+        }
+        .navlinks li a{
+            padding: 10px;
+            color: black;
+            font-size: 1.5em;
+        }
+        .navlinks li a:hover{
+            background-color: orange;
+            color: white;
+           border-bottom-left-radius: 50px;
+           border-top-right-radius: 50px;
+        }
+        .navbar img{
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar img:hover{
+            padding: 20px;
+            background-color: orange;
+            border-bottom-left-radius: 50px;
+           border-top-right-radius: 50px;
+
+        }
+        @media screen and (max-width:500px) {
+            .navlinks ul li a{
+               font-size:1em ;
+            }
+            .navlinks ul{
+                gap: 5px;
+            }
+            .navbar img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        @media screen and (min-width:510px){
+            .navlinks ul li a{
+               font-size:1.5em ;
+            }
+            .navlinks ul{
+                gap: 15px;
+            }
+            .navbar img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <img href="https://www.google.co.id/?hl=en" src="https://logos-world.net/wp-content/uploads/2020/10/Free-Logo.png" alt="" class="logo">
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

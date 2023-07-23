@@ -1,0 +1,207 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background: rgb(196, 196, 229);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+.navmenu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.navmenu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 250;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.navmenu li a:hover{
+    padding: 8px 16px;
+    background:red;
+    color: white;
+    border-radius: 10px;
+}
+.navsearch form input{
+    display: inline-block;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navsearch form input[type="search"]{
+    width: 300px;
+    height: 30px;
+}
+.navsearch form input[type="search"]:hover{
+   border-bottom: 1px solid gray;
+}
+.navsearch form input[type="button"]{
+    width: 60px;
+    height: 30px;
+}
+.navsearch form input[type="button"]:hover{
+    background: red;
+    color: white;
+}
+.mainimg h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    padding: 5px;
+}
+.img{
+    display: flex;
+    flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+.img img{
+    width: 15%;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainjudul h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    padding: 5px;
+}
+.maincontent{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    grid-gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    width: 80%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 10px;
+}
+.card h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.card p{
+    font-size: .8em;
+    font-weight: 200;
+    text-transform:capitalize;
+}
+aside{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(196, 196, 229);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.asidecontent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 0px;
+}
+.asidecontent h3{
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+.asidecontet p{
+    text-align: center;
+    font-size: .8em;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.asidecontent button{
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    font-size: .9em;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 80px;
+    height: 30px;
+    margin: 0px 40%;
+}
+.asidecontent button:hover{
+    background-color:red;
+    color:gray;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 0px;
+}
+.footercontent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+    text-align: center;
+}
+.footercontent h3{
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footercontent p{
+    font-size: .7em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.footercontent p span{
+    font-size: .8em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+@media (max-width: 800px) {
+    .img img {
+      width: 50%;
+    }
+    .asidecontent{
+        width: 50%;
+    }
+  }
+  @media (max-width: 600px) {
+    .img img {
+      width: 20%;
+    }
+  }

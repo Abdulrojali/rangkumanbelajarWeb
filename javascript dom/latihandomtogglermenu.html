@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-size: 1em;
+        font-weight: 250;
+        text-transform: capitalize;
+        line-height: 1.2em;
+        text-decoration: none;
+        list-style: none;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .navbar h3{
+        font-size:1.3em;
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #navlinks ul{
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+    #navlinks li a{
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight:250;
+    }
+    #navlinks li a:hover{
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+    }
+    #navtoggler{
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        width: 80px;
+        height: 45px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    #navtoggler .bar{
+        width: 30px;
+        height: 2px;
+        background-color: black;
+    }
+@media (max-width:550px){
+    #navlinks{
+        display: none;
+    }
+    #navtoggler{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #navlinks.active{
+        display: flex;
+        background-color: blue;
+        padding: 50% 100% 100% 100%;
+    }
+    #navlinks ul{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    #navlinks li a{
+        color: white;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+            </div>
+            <div id="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+            <div id="navtoggler">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+    <script src="latihandomtogglermenu.js"></script>
+</body>
+</html>

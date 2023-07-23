@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    </style>
+</head>
+<body>
+    
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+    <script>
+        // beberapa cara memanipulasi node
+        /* beberapa metode manipulasi node
+        1. document.createElement()
+        2. document.createTextNode()
+        3. node.appendChild()
+        4. node.insertBefore()
+        5. parentNode.removeChild()
+        6. parentNode.replaceChild()
+        */
+
+        // buat element baru
+        // 1. menggunakan document.createElement()
+        const pBaru= document.createElement('p');
+
+    // buat teks di dalam element baru
+    // 2. menggunakan document.createTextNode("isi paragraf");
+    const teksBaru=document.createTextNode("ini teks baru");
+     
+    // menyimpan teks kedalam element baru
+    // 3. menggunakan appendChild
+    pBaru.appendChild(teksBaru);
+
+    // menyimpan element baru di bagian akhir
+    // pertama cari letak parent yang ingin anda letakan element baru nya
+    const sectionA=document.getElementById('a')
+    // lalu element parent di tujukan menggunakan appendChild seperti di bawah ini.
+
+    // note appendChild menyimpan ke tempat yang di ingin kan tetapi di bagian akhir
+    sectionA.appendChild(pBaru)
+
+    // 4. insertBefore menyimpan element sesuai keinginan 
+    const liBaru= document.createElement('li')
+    const teksLiBaru= document.createTextNode("item baru");
+    // ini menyatukan li dengan teks baru
+    liBaru.appendChild(teksLiBaru)
+
+    // mencari parent dari li untuk bisa mengatur posisi element baru yang akan di simpan
+    const ul=document.querySelector('section#b ul');
+    // karena kita akan menambah li baru sebelum li kedua maka kita buat variabel yang menghubungkan li2
+    const li2=ul.querySelector('li:nth-child(2)');
+
+    // ini cara menggabungkan li baru ke dalam ul sesuai tempat yang ingin kan
+    ul.insertBefore(liBaru,li2)
+    // note parameter pertama adalah element baru yang akan di tambah , parameter kedua adalah tempat dimana kita akan meletakan element baru sebelum li parameter kedua tersebut
+
+
+    // cara menghapus element 
+    // 4. removeChild
+
+    // element yang akan di hapus
+    const link=document.getElementsByTagName('a')[0];
+    // cara menghapusnya node
+    // sectionA adalah parent dari link
+    sectionA.removeChild(link);
+
+
+    // mengganti node
+    // 5. replaceChild
+
+    // membuat variabel untuk parent dari node yang akan di hapus
+    const sectionB= document.getElementById('b');
+    // ini adalah node yang akan di ganti
+    const p4= sectionB.querySelector('p');
+
+    // ini adalah element baru untuk node yang di ganti
+    const h2Baru= document.createElement('h2');
+    // ini adalah teks dalam element baru
+    const teksH2Baru= document.createTextNode('judul baru');
+    //ini memasukan teks baru kedalam element baru
+    h2Baru.appendChild(teksH2Baru)
+
+    // ini cara menganti node baru
+    // sectionB adalah parent dari node p4 yang di ganti dengan h2Baru.
+    
+    // note parameter pertama pada replace adalah untuk element baru sedangkan parameter kedua untuk element yang akan di ganti
+    sectionB.replaceChild(h2Baru,p4)
+
+    </script>
+</body>
+</html>

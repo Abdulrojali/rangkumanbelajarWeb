@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create according</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(182, 178, 178);
+        }
+        .according{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .active .according{
+            opacity: 0.2;;
+        }
+        .judul{
+            font-size: 1.5em;
+            font-weight: 800;
+        }
+        .according p{
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="according">
+            <div class="judul">section 1</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nisi in amet enim culpa est tempore, architecto voluptatem ipsa quos, exercitationem eaque. Magnam excepturi vero numquam perferendis quod assumenda cumque!</p>
+        </div>
+        <div class="according">
+            <div class="judul">section 2</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nisi in amet enim culpa est tempore, architecto voluptatem ipsa quos, exercitationem eaque. Magnam excepturi vero numquam perferendis quod assumenda cumque!</p>
+        </div>
+        <div class="according">
+            <div class="judul">section 3</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nisi in amet enim culpa est tempore, architecto voluptatem ipsa quos, exercitationem eaque. Magnam excepturi vero numquam perferendis quod assumenda cumque!</p>
+        </div>
+    </div>
+    <script>
+        let acc=document.querySelectorAll('.according')
+
+            acc.forEach(z=>{
+                z.addEventListener('click',function(){
+                z.classList.toggle('active')
+                let teks=z.lastElementChild
+                if(teks.style.display==='block'){
+                    teks.style.display='none'
+                }
+                else{
+                    teks.style.display='block'
+                }
+            })
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-weight: 200;
+            text-transform: capitalize;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 0 1px 2px gray;
+        }
+        .navbar{
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        .navlinks ul{
+            list-style-type: none;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navlinks li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.1em;
+            font-weight: 150;
+            text-transform: capitalize;
+        }
+        .navlinks li a:hover{
+           border-bottom: 2px solid red;
+        }
+        main{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            background: url('https://media.istockphoto.com/id/1439741254/id/foto/tongkang-di-sungai-pittsburgh.jpg?b=1&s=170667a&w=0&k=20&c=1pspUglwYWDs4IStV7xsQs16n_nlTnxclySRPPE3S0M=');
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .content-1{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: center;
+        }
+        .navinput{
+            display: flex;
+            gap: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>turu</h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="" class="links">home</a></li>
+                    <li><a href=""class="links">menu</a></li>
+                    <li><a href=""class="links">about</a></li>
+                    <li><a href=""class="links">service</a></li>
+                    <li><a href=""class="links">contact</a></li>
+                </ul>
+            </div>
+            <div class="navinput">
+             <label for="black">black <input type="checkbox" name="black" id="black"></label>
+             <label for="white">white <input type="checkbox" name="white" id="white"></label>
+
+            </div>
+        </nav>
+        <main>
+            <div class="content-1">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde, quos sunt odio praesentium veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia quae amet aperiam laboriosam alias similique ex quam eos, voluptate eveniet natus officiis? Quaerat pariatur vitae tempora porro quis asperiores.</p>
+            </div>
+        </main>
+    </div>
+    <script src="hitamputih.js"></script>
+</body>
+</html>

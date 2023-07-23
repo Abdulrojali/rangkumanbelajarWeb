@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create menu icon </title>
+    <style>
+        .icon{
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 95%;
+        }
+        .satu, .dua ,.tiga{
+            height: 4px;
+            width: 30px;
+            background-color: black;
+            margin: 6px 0;
+        }
+        .ubah .satu{
+            transform: translate(0,10px) rotate(-45deg);
+        }
+        .ubah .dua{
+            opacity: 0;
+        }
+        .ubah .tiga{
+            transform: translate(0,-10px) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="icon" onclick="oke(this)">
+            <div class="satu"></div>
+            <div class="dua"></div>
+            <div class="tiga"></div>
+    </div>
+    <script>
+        function oke(z){
+            z.classList.toggle('ubah');
+        }
+    </script>
+</body>
+</html>

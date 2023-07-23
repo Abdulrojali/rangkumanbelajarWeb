@@ -1,0 +1,173 @@
+ 
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+ }
+ nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+ }
+ .navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
+ }
+ .navbar h3{
+    font-size: 1.5em;
+    font-weight: 650;
+    text-transform:uppercase;
+ }
+ .navbar p{
+    font-size: .9em;
+ }
+ .navlinks ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+ }
+ .navlinks li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+ }
+ a:hover{
+    padding: 8px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+ }
+ header{
+    color: white;
+    width: 100%;
+    height:300px;
+    background: url(https://images.pexels.com/photos/4786270/pexels-photo-4786270.jpeg?cs=srgb&dl=pexels-cottonbro-4786270.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .headerteks{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 70%;
+ }
+ .headerteks h3{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ .headerteks p{
+    font-size: 1em;
+ }
+ .headerteks button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 35px;
+    font-size: .8em;
+    font-weight: 300;
+    margin: 10px auto;
+ }
+ .headerteks button:hover{
+    background-color: cyan;
+    border-radius: 10px;
+ }
+ main{
+    width: 100%;
+    margin:15px 5%;
+    padding-bottom: 10px;
+ }
+ .gridcards{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-gap: 20px;
+ }
+ .gridcard{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 0 5px 1px gray;
+ }
+ .gridcard h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform:uppercase;
+ }
+ .gridcard p{
+    font-size: .8em;
+ }
+ footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .footercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+ .footercontent h3{
+    font-size: 1.7em;
+    font-weight: 800;
+    text-transform: uppercase;
+ }
+ .footercontent p{
+    font-size: .8em;
+ }
+ .footercontent p span{
+    font-weight: 500;
+    font-size: .8em;
+ }
+ .footericon ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+ }
+ .footericon li i{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: gray;
+ }
+ @media all and screen (min-width:600px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .headerteks h3{
+      text-align: center;
+      font-size:1em;
+    }
+    .headerteks p{
+      font-size: .7em;
+    }
+ } 

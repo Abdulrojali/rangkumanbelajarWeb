@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .colom{
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 200px 100px;
+            /* /* grid-auto-flow: row; 
+            grid-auto-flow: column;
+             grid-auto-flow: row dense;
+            grid-auto-flow: column dense;*/
+            /*grid-auto-rows: 200px;  untuk mengisi ukuran column implisit content
+            grid-auto-column: 200px; untuk mengisi ukuran baris implisit content */
+            /* grid-template-columns: repeat(2,1fr) repeat(3, 2fr); untuk membuat ukuran berulang */
+            /* grid-template-columns: min-content / max-content;membuat ukuran baris sesuai item */
+            /* grid-template-columns: repeat(auto-fill,100px); auto-fill/ auto-fit untuk membuat baris responsive */
+            /* grid-template-columns: minmax(200px,500px); menentukan ukuran setiap baris batas minimal dan maximal */
+            grid-gap: 5px;
+            border: 1px solid black;
+
+            /* grid aligments */
+             /* justify-items:start,end,stretch,center ; mensejajarkan grid item secara horizontal */ 
+             /* align-items: start,end,stretch,center; mensejajarkan grid item secara vertikal */
+             /* place-items: center center/ center end /center start; mensejajarkan justify-items: ; dan align-items: ; */
+             /* justify-content:start,center,end,stech,space-around,space-between,space-evenly ; mensejajarkan posisi grid secara horizontal syaratnya ukurang total grid lebih kecil dari container */
+             /* align-content:start,center,end,stech,space-around,space-between,space-evenly ; mensejajarkan posisi secara vertikal */
+             /* place-content:start,center,end,stech,space-around,space-between,space-evenly ;shorthand untuk align-content: ; dan justify-content: ; */
+           
+             /* grid children
+             grid-column-start:1;
+             grid-column-end:2;
+             grid-rows-start:2;
+             grid-rows-start:1;
+
+              
+             note : span untuk memanjang 
+             grid-column:1/2;
+             grid-row:1/2;
+             artinya mulai dari 1 berakhir di 2
+
+             atau 
+             grid-column:1/ span 2
+             artinya mulai dari satu berakhir di 4
+
+             grid-area:; menambahkan deklarasi untuk grid-template-area atau untuk grid column
+             contoh 1
+             sidbar{
+                grid-area:'sidebar';
+             }
+
+             contoh 2
+             sidebar{
+                grid-area:1/1/2/2;
+                grid-area:column start/row start/column end/row end;
+             }
+
+
+             justify-self mengatur posisi child pada sumbu horizontal
+             justify-self:start,end,center,strech;
+
+
+             align-self mengatur posisi child pada sumbu vertikal
+             align-self:start,end,center,stech;
+
+             place-self shorthand align dan justify
+             place-self:align / justify;
+            */
+            }
+        .colom p{
+            background-color: red;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="colom">
+        <p class="colom-satu">1</p>
+        <p class="colom-dua">2</p>
+        <p class="colom-tiga">3</p>
+        <p class="colom-empat">4</p>
+        <p class="colom-lima">5</p>
+        <p class="colom-enam">6</p>
+    </div>
+</body>
+</html>

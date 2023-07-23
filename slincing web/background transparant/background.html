@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --color-primary:blue;
+            --color-hv:white;
+            --btn-hv:gray;
+        }
+.parent {
+    background: url(pemandangan.jpg);
+  background-size: cover;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.parent::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: inherit;
+  filter: blur(10px); 
+
+}
+
+.child {
+    color: brown;
+    margin-top: 35%;
+    position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 5px;
+  text-align: center;
+}
+.child h1{
+    font-size: 4em;
+    font-weight: 700;
+    color: red;
+}
+.child p{
+    font-size: 1em;
+    font-weight: 300;
+    color:red;
+    width: 300px;
+}
+        .child button{
+            display: inline-block;
+            width:65px;
+            height: 30px;
+        }
+        .child button:hover{
+            color: white;
+            background-color:blue;
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: none;
+        }
+        nav{
+            color: red;
+            padding: 10px 0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar h3{
+            font-size: 2em;
+            font-weight: 700;
+            color: white;
+        }
+        .navlinks ul{
+            display: flex;
+            gap: 25px;
+            list-style-type: none;
+        }
+        .navlinks li a{
+            font-size: 1em;
+            color: black;
+            text-decoration: none;
+        }
+        .navlinks li a:hover{
+            color: white;
+            background-color:blue;
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: none;
+        }
+        .section-banner{
+            margin-top: 50%;
+            width: 100%;
+            height: 250px;
+            background-color: orange;
+            display: grid;
+           place-items: center;
+           text-align: center;
+        }
+        .teks-banner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .teks-banner h3{
+            font-size: 2em;
+            font-weight: 700;
+            color: white;
+        }
+        .teks-banner p{
+            font-size: 1em;
+            font-weight: 200;
+            color: white;
+        }
+        .teks-banner button{
+            border: none;
+            display: inline-block;
+            width: 70px;
+            height: 35px;
+        }
+        .teks-banner button:hover{
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+        }
+        main{
+            padding: 20px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            background-color:orange;
+            color: rgb(235, 234, 234);
+        }
+        .about-me{
+            display: flex;
+            place-content: center;
+            gap: 30px;
+        }
+        .list-project{
+            width: 100%;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+            gap: 8px;
+            
+        }
+        .my-project{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 0;
+        }
+        .my-project h3{
+            font-size: 1.1em;
+            font-weight: 100;
+        }
+        .my-project p{
+            font-size: .8em;
+           font-weight: 100;
+        }
+        .my-project button{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+        }
+        footer{
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            text-align: center;
+        }
+        .teks-center{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: white;
+        }
+        .teks-center h3{
+            font-size: 2.3em;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .teks-center p{
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <nav>
+            <div class="navbar">
+                <h3>test</h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">time</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="child">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta inventore blanditiis quas! A, perspiciatis asperiores.</p>
+            <button>click</button>
+        </div>
+    </div>
+    <section class="section-banner">
+        <div class="teks-banner">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt, sequi magnam maxime itaque temporibus?</p>
+            <button>click</button>
+        </div>
+    </section>
+    <main>
+        <div class="about-me">
+            <div class="about-img">
+                <img src="" alt="" width="200px" height="150px">
+            </div>
+            <div class="about">
+                <h3>nama : <span>abdul rojali</span></h3>
+                <h3>age : <span>19</span></h3>
+                <h3>addres : <span>perumahaan bukit citra asri rt 03/09</span></h3>
+                <h3>jenis kelamin : <span>laki laki</span></h3>
+                <h3>hobi: <span>turu</span></h3>
+            </div>
+        </div>
+        <div class="list-project">
+            <div class="my-project">
+                <img src="" alt="" width="100px"height='50px'>
+                <h3>marketplace</h3>
+                <button width="50px"height='30px'>view</button>
+            </div>
+            <div class="my-project">
+                <img src="" alt="" width="100px"height='50px'>
+                <h3>web belajar</h3>
+                <button width="50px"height='30px'>view</button>
+            </div>
+            <div class="my-project">
+                <img src="" alt="" width="100px"height='50px'>
+                <h3>web marketing</h3>
+                <button width="50px"height='30px'>view</button>
+            </div>
+            <div class="my-project">
+                <img src="" alt="" width="100px"height='50px'>
+                <h3>portfolio</h3>
+                <button width="50px"height='30px'>view</button>
+            </div>
+            <div class="my-project">
+                <img src="" alt="" width="100px"height='50px'>
+                <h3>website pemerintah</h3>
+                <button width="50px"height='30px'>view</button>
+            </div>
+            <div class="my-project">
+                <img src="" alt="" width="100px"height='50px'>
+                <h3>todolist</h3>
+                <button width="50px"height='30px'>view</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="teks-center">
+            <h3>test</h3>
+            <b>copyright by @test.id</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maxime nulla totam enim eaque minus nihil accusamus vitae aliquid ducimus.</p>
+            
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: capitalize;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.nilai{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nilai .hasil{
+    font-size: 2em;
+}
+.nilaiYangDiBerikan{
+    display: flex;
+    gap: 5px;
+    font-size: 2em;
+}
+.nilai .hasilYangDiBerikan{
+    font-size: 1.3em;
+}
+.calculate{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px gray;
+}
+.calculate>button{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 900;
+}
+.calculate>button:last-child{
+    background-color: orange;
+    color: white;
+}
+.calculate>button:nth-child(4){
+    color: orange;
+}
+.calculate>button:nth-child(8){
+    color: orange;
+}.calculate>button:nth-child(12){
+    color: orange;
+}.calculate>button:nth-child(16){
+    color: orange;
+}
+.calculate>button:hover{
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--event onclick menggunakan id-->
+
+    <button onclick="document.getElementById('demo').innerHTML=date()">date</button><br><br>
+    <p class="input1"></p>
+    <!--event onclick tidak menggunakan id bisa menggunakan (this)
+    contoh nya ada di bawah ini !-->
+    <button onclick="this.innerHTML=turu()">date</button>
+    <p class="input2"></p>
+
+    <script src="event.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create tabs </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+        }  
+        .tab{
+            display: flex;
+            gap: 10px;
+        }  
+        .tab button{
+            display: inline-block;
+            width: 70px;
+            height: 25px;
+        }  
+        .kota{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .kota p{
+            font-size: 1.2em;
+            display: none;
+        }
+        .active .click:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="satu">london</button>
+        <button class="dua">maroko</button>
+        <button class="tiga">palestin</button>
+    </div>
+    <div class="kota">
+        <p>lodon adalah sebuah kota di prancis</p>
+        <p>maroko adalah sebuah kota di arab</p>
+        <p>palestin adalah sebuah kota di korea</p>
+    </div>
+    <script>
+        const btn=document.querySelectorAll('button')
+        const kota=document.querySelectorAll('p')
+        for(let i=0; i<btn.length; i++){
+            btn[i].addEventListener('click',function(){
+                for(let j=0; j<kota.length; j++){
+                    if(btn[i].length==kota[j].length){
+                        kota[j++].style.display='block'
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

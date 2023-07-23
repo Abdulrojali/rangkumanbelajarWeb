@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-weight: 200;
+            text-transform: capitalize;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+        .navbar{
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .navbar span{
+            color: red;
+        }
+        main{
+            border: 1px solid black;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards {
+            width: 100%;
+            display: grid;
+            padding: 50px;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 30px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .cards img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .imgkosong{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(150px,150px));
+            grid-gap: 20px;
+            padding: 20px 20px 0 20px;
+            background-size: cover;
+            border: 1px solid red;
+        }
+        .imgkosong img{
+            display: inline-block;
+            width: 100%;
+            height: 50%;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>latihandom <span>3</span></h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><p class="satu" >home</p></li>
+                    <li><p class="dua" >menu</p></li>
+                    <li><p class="tiga" >about</p></li>
+                    <li><p class="empat" >service</p></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="imgkosong"></div>
+            <div class="cards">
+               <img src="https://media.istockphoto.com/id/1428421343/id/foto/pemandangan-matahari-terbenam-lanskap-di-pantai-barat-irlandia-dengan-cahaya-terakhir-bersinar.jpg?b=1&s=170667a&w=0&k=20&c=8tjb2p35fAcEbbyvRrzYQsLfAHMtPJqmODQ4wBx0LCc=" alt="" class="items 1">
+               <img src="https://media.istockphoto.com/id/1395845992/id/foto/lanskap-musim-panas-dengan-danau-kecil-di-hutan.jpg?b=1&s=170667a&w=0&k=20&c=CQ2hudYO7iYEk1AniKGAUHYsrdjOVIbgyCnZHo8HDM8=" alt="" class="items 2">
+               <img src="https://media.istockphoto.com/id/1396321260/id/foto/siluet-hitam-pohon-dan-salju-putih-pemandangan-jalan-melalui-hutan-tua.jpg?b=1&s=170667a&w=0&k=20&c=0ZwIimwrHP25F6bNjl8bii-I0teYYG2se4g9l6GcRoY=" alt="" class="items 3">
+               <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" class="items 4">
+            </div>
+        </main>
+    </div>
+    <script src="latihandom3.js"></script>
+</body>
+</html>

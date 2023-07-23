@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16;
+    font-weight: 300;
+    text-transform: capitalize;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+     font-size: 1.3em;
+     cursor: pointer;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgb(25, 25, 218);
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    height: 150vh;
+    background-color: bisque;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.navbar form input[type="search"]{
+   display: inline-block;
+   width: 400px;
+   height: 25px;
+   border: 1px solid gray;
+   cursor: pointer;
+   padding: 0px 15px;
+   font-size: 1em;
+   font-weight: 400;
+   text-transform: capitalize;
+}
+.navbar form input[type="search"]:hover{
+  border: none;
+  border-bottom: 2px solid red;
+}
+.navbar form input[type="submit"]{
+   display: inline-block;
+   width: 65px;
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+   font-size: .8em;
+   font-weight: 400;
+   text-transform: capitalize;
+   cursor: pointer;
+}
+.navbar form input[type="submit"]:hover{
+    background-color: cyan;
+    color: white;
+}
+.navbar p{
+    font-size: .6em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.navlinks li a:hover{
+    padding: 8px 16px ;
+    background-color: cyan;
+    color: white;
+    border-radius: 10px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: whitesmoke;
+}
+.headerteks, .gridcard{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.headerteks h3{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.headerteks p{
+    font: 1em;
+    font-weight: 300;
+}
+.headerteks button{
+    display: inline-block;
+    margin: 0 auto;
+}
+.headerteks button:hover{
+    background-color: cyan;
+}
+ main{
+    width: 100%;
+ }
+ main>h3{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 0;
+ }
+ .gridcards{
+    position: absolute;
+    margin: 10px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap:20px;
+    width: 90%;
+ }
+ .gridcard{
+    padding: 20px 15px;
+    box-shadow: 0 0 5px 1px gray;
+    background-color: whitesmoke;
+ }
+ .gridcard h3{
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+ .gridcard p{
+    font-size: .7em;
+    font-weight: 150;
+ }
+ aside{
+    width: 100%;
+    height: 35vh;
+    background-color: gray;
+    margin-top: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asidecontent{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+.asidecontent h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.asidecontent p{
+    font-size: .8em;
+}
+.asidecontent p span{
+    font-size: .8em;
+    font-weight: 650;
+}
+ @media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+    header{
+     text-align: center;
+    }
+    header p{
+        width: 90%;
+        margin-left: 15px;
+    }
+    main{
+        width: 100%;
+        height: 60vh;
+    }
+    aside{
+        margin-top: 27%;
+    }
+ }
+ @media only screen and (min-width: 600px) {
+    aside{
+        margin-top:75%;
+    }
+ } 
+ @media only screen and (min-width: 768px) {
+    aside{
+        margin-top: 50%;
+    }
+ } 

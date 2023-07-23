@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      *{
+        border: 2px solid #dedede;
+        padding: 15px;
+        margin: 15px;
+    }
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        max-width: 600px;
+        margin: 30px auto;
+        font-family: sans-serif;
+        color: #333;
+    }
+</style>
+<body>
+    <h1 id="judul">hello world</h1>
+    <div id="container">
+        <section id="a">
+            <p class="p1">paragraf 1</p>
+            <a href="nungguin yah">nungguin yah</a>
+            <p class="p2">paragraf 2</p>
+            <p class="p3">paragraf 3</p>
+            <button>let's go!</button>
+        </section>
+        <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </section>
+    </div>
+
+
+
+
+    <script>
+// beberapa cara memanipulasi element
+
+/* 1. element.innerHTML
+   2. element.style.<property>
+   3. element.setAttribute()
+   4. element.clasList
+   */
+
+   // 1. innerHTML mengganti isi menjadi teks  didalam tag html atau menambah tag html nya
+/*const judul=document.getElementById('judul');
+judul.innerHTML='<em>abdul rojali</em>';*/
+
+   // 2. element.style.<property>
+/*const judul= document.querySelector('#judul');
+ judul.style.color='lightblue'*/
+
+   // 3. element.setAttribut()
+ /*  const judul=document.getElementsByTagName("h1")[0];
+   // menambah attribut baru
+   judul.setAttribute('nama','ucup')
+
+   //  element.getAttribut()
+   // mencari tahu nilai didalam attribut dari sebuah tag
+   judul.getAttribute('id')
+
+     // element.removeAttribut()  
+     // menghapus attribut
+     judul.removeAttribute('id')*/
+     
+    /* element.classList
+    - element.classList.add()
+    - element.classList.remove()
+    - element.classList.toggle()
+    - element.classList.item()
+    - element.classList.contains()
+    - element.classList.replace()
+    */
+
+const p2=document.querySelector('.p2')
+    // element.classList.add()
+    // ini menambah label ke dalam class menjadi (p2 label)
+    p2.classList.add('label')
+
+
+    // element.classList.remove()
+    // menghapus class dalam tag yang di pilih
+    p2.classList.remove('label')
+
+
+    // element.classList.toggle()
+    // apabila class di dalam tag sudah ada maka apabila menggunakan toggle lagi dia akan menghapus class yang di berikan di toggle, apabila class belum ada maka akan di tambah secara otomatis
+    p2.classList.toggle('label')
+
+
+    // element.classList.item()
+    // mencari class list di dalam tag berdasarkan indeks yang di berikan
+    p2.classList.item(1)
+    console.log( p2.classList.item(1))
+
+
+    // element.classList.contains
+    // kepada javascript bertanya apakah ada class di tag p2 dengan nama label?
+    p2.classList.contains('label')
+    console.log(p2.classList.contains('label'))
+
+    // element.classList.replace()
+    // menggantikan class yang sudah ada
+    p2.classList.replace('label','turu')
+    </script>
+</body>
+</html>

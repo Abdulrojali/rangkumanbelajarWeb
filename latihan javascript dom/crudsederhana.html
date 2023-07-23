@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        body,html{
+            font-size: 1em;
+            font-weight: 300;
+            text-transform: capitalize;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar h3{
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .navlinks ul{
+            display:flex;
+            gap: 20px;
+        }
+        .navlinks li a{
+            color: black;
+        }
+        .navlinks li a:hover{
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            text-transform: capitalize;
+        }
+        .navbar h3 span{
+            color: red;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .tambah,.hapus{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           gap: 5px;
+        }
+        .tambah input, .hapus input {
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+        }
+        .tambah button, .hapus button{
+            display: inline-block;
+            width: 70px;
+            height: 25px;
+        }
+        .replace{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+        }
+        .replace input{
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+        }
+        .replace button{
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>Crud <span>Sederhana</span></h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="tambah">
+                <input type="text" name="tambahan" id="tambahan">
+                <button onclick="menambah()">tambah</button>
+                <div class="pushTambah">
+
+                </div>
+            </div>
+            <div class="hapus">
+                <input type="text" name="hapusan" id="hapusan">
+                <button onclick="menghapus()">hapus</button>
+            </div>
+            <div class="replace">
+                <label for="menu di ubah">masukkan input untuk menu yang di ubah</label>
+                <input type="text" name="replacean" id="replacean">
+                <label for="text mengubah input">masukkan nilai dari input yang ingin di tambah dalam menu</label>
+                <input type="text" name="menuPilihan" id="menuPilihan">
+                <button onclick="mereplace()">replace</button>
+            </div>
+            <div class="arsip">
+
+            </div>
+        </main>
+    </div>
+    <script src="crudsederhana.js"></script>
+</body>
+</html>

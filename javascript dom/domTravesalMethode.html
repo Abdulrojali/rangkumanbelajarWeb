@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .container ol{
+            position: absolute;
+            top: 35px;
+            left: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container ol li p{
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .parentNode{
+            margin-top: 200px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>beberapa macam methode dom travesal </h3>
+        <ol>
+            <li><p>parentNode</p></li>
+            <li><p>parentElement</p></li>
+            <li><p>nextSibling</p></li>
+            <li><p>nextElementSibling</p></li>
+            <li><p>previousSibling</p></li>
+            <li><p>previousElementSibling</p></li>
+        </ol>
+    </div>
+    <div class="parentNode">
+        <h1>contoh parent node</h1>
+        <div class="contoh-satu">
+            <h3>nama saya : <span>abdul rojali</span></h3>
+            <p class="test-1">cita cita saya menjadi presiden</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, laborum!</p>
+        </div>
+    </div>
+    <script src="domTravesalMethode.js"></script>
+</body>
+</html>

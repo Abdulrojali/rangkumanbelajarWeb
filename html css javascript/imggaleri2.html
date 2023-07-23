@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 150;
+    text-transform: capitalize;
+}
+body{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    height: 800px;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.thumb{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+.thumbalin{
+    width: 100%;
+    height: 100%;
+}
+.thumbalin img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.thumb-big{
+    width: 100%;
+    height: 600px;
+}
+.thumb-big img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+@keyframes animasi{
+    to{
+        opacity: 1;
+    }
+}
+.animasi{
+    opacity: 0;
+    animation: animasi 0.5s forwards;
+}
+.thumbalin .blur{
+    opacity: 5;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thumb-big">
+            <img  alt="" class="img-jumbo" >
+        </div>
+        <div class="thumb">
+            <img src="New folder/img/gajah.png" alt="" class="thumbalin">
+            <img src="New folder/img/semut.png" alt="" class="thumbalin">
+            <img src="New folder/img/orang.png" alt="" class="thumbalin">
+            <img src="New folder/img/gajah.png" alt="" class="thumbalin">
+        </div>
+        </div>
+        <script src="imggaleri2.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        border: 2px solid #dedede;
+        padding: 15px;
+        margin: 15px;
+    }
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        max-width: 600px;
+        margin: 30px auto;
+        font-family: sans-serif;
+        color: #333;
+    }
+</style>
+<body>
+    <h1 id="judul">hello world</h1>
+    <div id="container">
+        <section id="a">
+            <p class="p1">paragraf 1</p>
+            <a href="nungguin yah">nungguin yah</a>
+            <p class="p2">paragraf 2</p>
+            <p class="p3">paragraf 3</p>
+        </section>
+        <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        /*
+        // 1. untuk memanggil id
+        document.getElementById()
+        // 2. untuk memanggil tag
+        document.getElementsByTagName()
+        // 3. untuk memanggil class
+        document.getElementsByClassName()
+        // 4. mencari element berdasarkan selektor
+        querySelector()
+        querySelectorAll()
+*/
+// dom selection
+// 1. document.getElementById => element
+/*let judul=document.getElementById('judul');
+
+// contoh manipulasi nya
+judul.style.color="red";
+judul.style.backgroundColor="blue";
+judul.style.fontFamily="timesnewroman"
+judul.style.fontSize="5em"
+
+// 2. document.getElementByTagName()
+// ini menyeleksi semua element p
+let p=document.getElementsByTagName('p');
+
+// untuk memanipulasi nya selectnya sama seperti array
+p[0].style.backgroundColor="red";
+// atau kalo semua mau di ubah element p
+ for (let i = 0; i<p.length;i++){
+    p[i].style.backgroundColor="red";
+ }
+
+ // note apabila memanggil memakai tag bisa juga seperti ini
+ let h1= document.getElementsByTagName('h1')[0];
+ h1.style.backgroundColor="gray";
+
+// 3. document.getElementByClassName()
+// sama seperti dengan tagName kita harus memberi index agar tidak tertukar dengan element p lain walaupun sudah di beri class.
+let p1= document.getElementsByClassName('p1')[0];
+p1.innerHTML="suuuuuuu";*/
+
+// 4. document.querySelector()
+//hanya mengembalikan 1 element atau memanipulasi 1 element pertama yang di cari
+
+// contoh 1
+/*let p4=document.querySelector("#b p")
+// ini mksdnya javascript mencari element p yang ada di dalam id #b
+p4.style.color="blue";
+
+// contoh 2 menyeleksi ke ul li
+let li2 = document.querySelector('section#b ul li:nth-child(2)');
+li2.style.backgroundColor="gray";
+
+// 5. document.querySelectorAll() memilih semua element yang ada di halaman 
+let p= document.querySelectorAll('p');
+// untuk menyeleksi nya harus menggunakan indeks
+p[1].style.backgroundColor='orange';
+// apabila ingin menyeleksi semua harus menggunakan looping
+for(let j=0; j<p.length;j++){
+    p[j].style.backgroundColor='orange';
+}*/
+
+// 6. node root
+// variabel sectionB dengan id #b adalah parent dari p4 jadi untuk memanggil nya kita dapat memanggil variabel sectionB.queryselector / getElementByTagName.
+const sectionB= document.getElementById('b')
+const p4=sectionB.querySelector('p');
+p4.style.backgroundColor='lightblue';
+</script>
+</body>
+</html>

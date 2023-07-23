@@ -1,0 +1,296 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 400vh;
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/b62bcccd-85e8-433e-85a1-784c17767ad5/ID-en-20220808-popsignuptwoweeks-perspective_alpha_website_small.jpg" srcSet="https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/b62bcccd-85e8-433e-85a1-784c17767ad5/ID-en-20220808-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/b62bcccd-85e8-433e-85a1-784c17767ad5/ID-en-20220808-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/b62bcccd-85e8-433e-85a1-784c17767ad5/ID-en-20220808-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w);
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 150;
+    text-transform: capitalize;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.navbar h3{
+    font-size: 1.5em;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+.navsearch{
+    display: flex;
+    margin-left: 20px;
+}
+.navsearch form input{
+    display: inline-block;
+    width: 250px;
+    height: 15px;
+    border: none;
+    padding: 0 20px;
+    font-size:1em;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.navsearch form input:hover{
+    border-bottom: 1px solid orange;
+}
+.navsearch button{
+    display: block;
+    width: 80px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: whitesmoke;
+    font-size: .9em;
+    font-weight: 350;
+    text-transform: capitalize;
+}
+.navsearch button:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.headercontent{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.headerteks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.headerteks h3{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.headercontent p{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.headerteks p:last-child{
+    margin-top: 10px;
+    font-size: .9em;
+    font-weight: 150;
+}
+.headerform form input[type="email"]{
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.headerform form input[type="email"]:hover{
+   border: none;
+   border-bottom: 2px solid red;
+}
+.headerform form input[type="submit"]{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.headerform form input[type="submit"]:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+}
+hr{
+    width: 100%;
+    height: 10px;
+    border: none;
+    background-color: gray;
+    z-index: 1;
+}
+.section_pertama,.section_kedua,.section_tiga,.section_empat{
+    width: 100%;
+    height: 45vh;
+}
+.sectioncontent{
+    margin:35px 50px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    width: 100%;
+    grid-gap: 10px;
+}
+.sectionteks{
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+.sectionteks h3{
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.sectionteks p{
+    font-size: 1.4em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.sectionimg{
+    border: 1px solid red;
+    width: 70%;
+    height: 80%;
+}
+.sectionimg img {
+    width: 100%;
+    height: 100%;
+}
+.section_tiga{
+    margin-top: 10px;
+}
+.hrsection{
+    margin-top: 250px;
+}
+main{
+    width: 100%;
+    height: 45vh;
+}
+.maincontent{
+    margin:35px 50px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    width: 100%;
+    grid-gap: 10px;
+}
+.mainteks{
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+.mainteks h3{
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.mainteks p{
+    font-size: 1.4em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.mainimg{
+    border: 1px solid red;
+    width: 70%;
+    height: 80%;
+}
+.mainimg img {
+    width: 100%;
+    height: 100%;
+}
+aside{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asidecontent{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+.asidecontent h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding:10px 0;    
+}
+.asideulbutton{
+    width:70%;
+}
+.asideulbutton ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.asideulbutton li button{
+    display: inline-block;
+    width: 650px;
+    height: 50px;
+    border: none;
+    background-color:black;
+    color: white;
+    font-size: 2em;
+    font-weight: 350;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px 20px;
+}
+.asideulbutton li button:hover{
+    background-color: white;
+    border: 1px solid red;
+    color:black;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: gray;
+}
+footer h3{
+    position: absolute;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin: 20px 5%;
+}
+.footercontent{
+    position: absolute;
+    width: 70%;
+    margin: 50px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_ul ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer_ul li p{
+    font-size: 1em;
+    font-weight: 260;
+    text-transform: capitalize;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-weight: 100;
+            text-transform: capitalize;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .tambahitem{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            margin:50px auto;
+        }
+        .tambahitem input[type='text']{
+            display: inline-block;
+            width: 100%;
+            height: 20px;
+            padding: 5px 20px;
+        }
+        .tambahitem input[type='button']{
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+        }
+        .tambahitem input[type='button']:hover{
+            background-color: red;
+            color: white;
+            border: none;
+        }
+        .mainitem{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tambahitem">
+            <input type="text" name="" id="tambahitem">
+            <input type="button" value="+" id="tambah">
+            <input type="button" value="-" id="hapus">
+        </div>
+        <div class="mainitem">
+
+        </div>
+    </div>
+    <script src="tambah&hapus.js"></script>
+</body>
+</html>

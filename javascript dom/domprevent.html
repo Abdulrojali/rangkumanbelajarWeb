@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Default</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        justify-content: center;
+        align-items: center;
+        grid-gap: 15px;
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            padding: 20px;
+            box-shadow: 0 0 1px 2px gray;
+        }
+        .content-1,.content-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap:10px;
+        }
+        .content-1 img{
+            display: inline-block;
+            width: 100px;
+            height:50px;
+        }
+        .content-1 a{
+            font-size: 1.5em;
+            text-decoration: none;
+            color: black;
+            font-weight: 1000;
+            text-transform: lowercase;
+        }
+        .content-1 a:hover{
+            color: red;
+        }
+        .content-2 h1{
+            font-size: 1.1em;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .content-2 p{
+            font-size: .8em;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="content-1">
+                <img src="" alt="">
+                <a href="" class="close">x</a>
+            </div>
+            <div class="content-2">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio natus, asperiores porro sequi consectetur.</p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="content-1">
+                <img src="" alt="">
+                <a href="" class="close">x</a>
+            </div>
+            <div class="content-2">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio natus, asperiores porro sequi consectetur.</p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="content-1">
+                <img src="" alt="">
+                <a href="" class="close">x</a>
+            </div>
+            <div class="content-2">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio natus, asperiores porro sequi consectetur.</p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="content-1">
+                <img src="" alt="">
+                <a href="" class="close">x</a>
+            </div>
+            <div class="content-2">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio natus, asperiores porro sequi consectetur.</p>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="content-1">
+                <img src="" alt="">
+                <a href="" class="close">x</a>
+            </div>
+            <div class="content-2">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non distinctio natus, asperiores porro sequi consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <script src="domprevent.js"></script>
+</body>
+</html>

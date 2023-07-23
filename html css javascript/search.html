@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mencari nama</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-weight: 100;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .container{
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .search-item{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .cari-item h3, .judul-tambah h3{
+            font-size: 1.3em;
+            font-weight: 800;
+            text-transform:uppercase;
+            text-align: center;
+        }
+        .search{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .search input[type='search']{
+            display: inline-block;
+            width: 100%;
+            height: 25px;
+            padding: 0 20px;
+        }
+        .search input[type='button']{
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+            font-weight: 400;
+            color: white;
+            background-color: red;
+            border: none;
+        }
+        .search input[type='button']:hover{
+           border: none;
+           opacity: .5;
+        }
+        .tambah-item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .color-tambah-item input[type='text']{
+            display: inline-block;
+            width: 100%;
+            height: 25px;
+        }
+        .button-tambah-item{
+            display: flex;
+            gap: 25px;
+        }
+        .button-tambah-item button{
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+            color: white;
+            background-color: red;
+            border: none;
+        }
+        .button-tambah-item button:hover{
+            opacity: .5;
+        }
+        .item-colom-tambah{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-item">
+            <div class="cari-item">
+                <h3>cari items</h3>
+            </div>
+        <div class="search">
+            <input type="search" name="search" id="search">
+            <input type="button" value="cari" id="cari">
+        </div>
+        <p id="tampil-pilihan"></p>
+    </div>
+    <div class="tambah-item">
+        <div class="judul-tambah">
+            <h3>tambah items dan hapus item</h3>
+        </div>
+        <div class="item-colom-tambah">
+        <div class="colom-tambah-item">
+            <input type="text" name="tambah-item" id="tambah-item">
+        </div>
+        <div class="button-tambah-item">
+            <button id="tambah">+</button>
+            <button id="kurang">-</button>
+        </div>
+        <div class="hasil-tambah">
+        
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="search.js"></script>
+</body>
+</html>

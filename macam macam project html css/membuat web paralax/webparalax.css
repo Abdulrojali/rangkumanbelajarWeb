@@ -1,0 +1,66 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.paralak{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.atas{
+    background: url(https://cdn.pixabay.com/photo/2022/08/22/19/07/mountains-7404367_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    
+}
+.tengah{
+    background: url(https://cdn.pixabay.com/photo/2022/08/29/07/44/port-7418239_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bawah{
+    background: url(https://cdn.pixabay.com/photo/2022/09/09/15/16/monastery-7443192_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.navbar h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navlinks ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 250;
+    text-transform: capitalize;
+}
+.navlinks li a:hover{
+    padding: 8px 16px;
+    background-color: white;
+    color: rgb(41, 40, 40);
+    border-radius: 10px;
+}

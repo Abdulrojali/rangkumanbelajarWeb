@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .content1{
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content1">   
+            <input type="number" name="1" id="satu">
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+
+            </select>
+            <input type="number" name="dua" id="dua">
+            <button id="click">click</button>
+        </div>
+        <p id="hasil"></p>
+    </div>
+    <script src="calculatorinput.js"></script>
+</body>
+</html>

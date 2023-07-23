@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 0 2px 1px gray;
+        }
+        .navbar h3{
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .navlinks ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navlinks li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+            font-weight: 250;
+            text-transform: capitalize;
+        }
+        .navlinks li a:hover{
+            padding: 8px 16px;
+            border-radius: 5px;
+            border: none;
+            color: black;
+            background-color: aqua;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .maincontent{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .maincontent label{
+            font-size: 1.5em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .maincontent select {
+            display: inline-block;
+            width: 250px;
+            height: 40px;
+            font-size: 1.5em;
+        }
+        .maincontent button{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+            font-size: 1em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .maincontent button:hover{
+            border: none;
+            background-color: aqua;
+            color: black;
+        }
+        .coba{
+            padding: 20px;
+            display:flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 2px gray;
+            display: inline-block;
+            width: 50%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>latihan select input</h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">time</a></li>
+                    <li><a href="">date</a></li>
+                    <li><a href="">menu</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="maincontent">
+                <select name="" id="kota">
+                    <label for="nama kota ">nama kota</label>
+                    <option value="jakarta">jakarta</option>
+                    <option value="bogor">bogor</option>
+                    <option value="depok">depok</option>
+                    <option value="tanggerang">tanggerang</option>
+                    <option value="bekasi">bekasi</option>
+                </select>
+                <button id="click">click</button>
+            </div>
+            <div class="tampilketerangan">
+                
+            </div>
+        </main>
+    </div>
+    <script src="latihanselectinput.js"></script>
+</body>
+</html>

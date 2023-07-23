@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Mukta:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-family: 'Alkalami', serif;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.navbar h3{
+    font: 1.5em;
+    font-weight: 600;
+}
+.navlinks ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 250;
+}
+.navlinks li a:hover{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+}
+.navsearch input{
+    display: inline-block;
+    width: 300px;
+    height: 25px;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: 350;
+    text-transform: capitalize;
+    color: black;
+}
+.navsearch button{
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+}
+.navsearch button:hover{
+    background-color: red;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+main{
+    background-color: white;
+   padding: 20px 0;
+}
+.mainnew{
+   display: grid;
+   grid-template-columns: repeat(2,50%);
+   gap: 15px;
+   padding:25px;
+}
+.imgdress{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.imgfull img{
+    width: 90%;
+    height: 350px;
+    border-radius: 5px;
+}
+.imglite ul{
+ display: grid;
+ grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+}
+.imglite li img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+}
+.imgdescription{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.imgdescription h3,h1{
+    font-size: 1.3em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.imgdescription p{
+    font-size: .9em;
+    font-weight: 200;
+}
+.imgdescription #selectDress{
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+.sizeandbuy{
+    display: flex;
+    gap: 10px;
+}
+#size{
+    margin-top: 8px;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+}
+#buyNow{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+#buyNow:hover{
+    background-color: red;
+    color: white;
+    font-size: 1em;
+}
+.paragrafDescription p{
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    word-spacing: 2px;
+}
+.sectionpertama {
+    color: black;
+    background-color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.judullistproduct {
+    padding: 5px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.judullistproduct span{
+    color: red;
+}
+.sectionlist{
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 300px;
+    gap: 30px;
+}
+.sectionlistitem{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sectionlistitem img{
+    display: inline-block;
+    width: 100%;
+    height:150px;
+}
+.descriptionlist ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+.descriptionlist li h3{
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.descriptionlist li p{
+    font-size: .9em;
+    font-weight: 200;
+}
+.contactme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.maincontact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.maincontact form input{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+.maincontact form textarea{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footerlist{
+    display: flex;
+    gap: 20px;
+}
+.footerlistitem ul{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    list-style: none;
+}
+.footerlistitem li a{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.footerid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerid h3{
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.footerid p{
+    font-size: .9em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.footerid ul{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.footerid li i{
+    font-size: 1.2em;
+}
+.navtoggler{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 28px;
+    right: 35px;
+}
+.navtoggler .hero{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color:white;
+}
+@media screen and (max-width: 480px){
+    .navtoggler{
+        display: flex;
+    }
+    .navsearch{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0;
+    }
+    .navlinks{
+        display: none;
+    }
+    .navlinks.active{
+        display: flex;
+    }
+    .navlinks ul {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:745px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

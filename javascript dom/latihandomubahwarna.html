@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 0 1px 1px gray;
+        }
+
+        .navbar {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .navbar span {
+            color: red;
+        }
+
+        .navlinks ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .navlinks li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1em;
+            font-weight: 150;
+            text-transform: capitalize;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        main h3 {
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        main button {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            font-size: 1.1em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        main button:hover {
+            background-color: blue;
+            border: none;
+            color: white;
+        }
+
+        main h3 span {
+            color: red;
+        }
+
+        main h1 {
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .main-2 {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .main-2 h1 {
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .main-2 h3 {
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: uppercase
+        }
+
+        .main-2 h3 span {
+            color: red;
+        }
+
+        .main-2 button {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            font-size: 1.1em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .main-2 button:hover {
+            background-color: blue;
+            border: none;
+            color: white;
+        }
+        .main-3{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            grid-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .contentPertama,.contentKedua,.contentKetiga{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .merah,.hijau,.biru{
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+        }
+        .merah{
+            background-color: red;
+        }
+        .biru{
+            background-color: blue;
+        }
+        .hijau{
+            background-color: green;
+        }
+        h1{
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>hello <span>world</span></h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <h1>cara pertama</h1>
+            <h3>Bermain <span>Warna</span></h3>
+            <button id="click">click</button>
+        </main>
+        <div class="main-2">
+            <h1>cara kedua</h1>
+            <h3>bermain <span>warna</span></h3>
+            <button id="tekan">tekan</button>
+        </div>
+        <h1>cara ketiga</h1>
+        <div class="main-3">
+            <div class="contentPertama">
+                <div class="merah"></div>
+                <input type="range" name="merah" id="" min="0" max="255">
+            </div>
+            <div class="contentPertama">
+                <div class="hijau"></div>
+                <input type="range" name="hijau" id="" min="0" max="255">
+            </div>
+            <div class="contentPertama">
+                <div class="biru"></div>
+                <input type="range" name="biru" id="" min="0" max="255">
+            </div>
+        </div>
+    </div>
+    <script src="latihandomubahwarna.js"></script>
+</body>
+
+</html>

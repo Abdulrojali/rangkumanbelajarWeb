@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-weight: 200;
+            text-transform: capitalize;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 25px;
+            box-shadow: 0 0 1px 2px gray;
+        }
+        .navbar h3{
+            font-size: 1.25em;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .navbar span{
+            color: red;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .navlinks ul{
+            display: flex;
+            gap: 25px;
+            list-style-type: none;
+        }
+        .navlinks li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+        }
+        .navlinks li a:hover{
+            border-bottom: 1.5px solid gray;
+            font-size: 1.25em;
+        }
+        main{
+            margin-top: 5px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .maincontent{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: orange;
+        }
+        .judul h2{
+            color: black;
+            font-size: 2em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .maincontent img{
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background-size: cover;
+        }
+        .content-kedua{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 50px;
+            border-radius: 5px;
+        }
+        .menang{
+            width: 100px;
+            height: 65px;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>suit <span>jawa</span></h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="judul">
+                <h2>suit jawa </h2>
+            </div>
+            <div class="maincontent">
+                <div class="content-pertama">
+                     <img src="New folder/img/bg.png" class="computer"></img> 
+                </div>
+                <div class="menang"></div>
+                <div class="content-kedua">
+                    <img src="New folder/img/gajah.png" class="gajah" alt="">
+                    <img src="New folder/img/orang.png" class="orang" alt="">
+                    <img src="New folder/img/semut.png" class="semut" alt="">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="suitjawa2.js"></script>
+</body>
+</html>

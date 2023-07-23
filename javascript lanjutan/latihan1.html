@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-weight: 100;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 5px;
+        }
+        .navbar h3{
+            font-size: 1.4em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .navlinks ul{
+            list-style-type: none;
+            display: flex;
+            gap:25px;
+        }
+        .navlinks li a{
+            text-decoration: none;
+            font-weight: 250;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .navlinks li a:hover{
+            padding: 20px;
+            border: none;
+            color: white;
+            background-color: red;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .mainbiling{
+            display:flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputbiling{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .inputbiling label{
+            font-size: 1em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .inputbiling input{
+            display: inline-block;
+            width: 100%;
+            height: 25px;
+        }
+        .inputbiling input[type='button']{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+        }
+        .inputbiling input[type='button']:hover{
+            border: none;
+            color: white;
+            background-color: red;
+            font-size: 1.1em;
+            font-weight: 200;
+        }
+        .keterangan{
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <h3>warnet ku</h3>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">service</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="mainbiling">
+                <div class="inputbiling">
+                    <label for="nama">nama </label>
+                    <input type="text" name="" id="nama">
+                    <label for="jumlah">jumlah pembelian biling</label>
+                    <input type="text" name="" id="nama-berapa-biling">
+                    <label for="uang">jumlah uang</label>
+                    <input type="number" name="" id="jumlah-uang">
+                    <input type="button" value="click" id="click">
+                </div>
+                <div class="keterangan">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="latihan1.js"></script>
+</body>
+</html>

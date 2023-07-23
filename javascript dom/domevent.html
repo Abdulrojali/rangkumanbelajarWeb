@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+            * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+</style>
+<body>
+    <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2" onclick="ubahWarnaP2()">paragraf 2</p>
+          <!-- ini adalah contoh event handler menggunakan attribut html-->
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+
+
+
+    <script>
+        // event dom javascript
+        // 1. event handler
+        //   - inline,html attribut
+        // ini adalah contoh penggunaan event handler pada atribut html
+        const p2=document.querySelector('.p2');
+        function ubahWarnaP2(){
+            p2.style.backgroundColor='lightblue';
+        }
+     
+        //   - element method
+        // ini adalah contoh penggunakan event handler menggunakan element method
+        const p3= document.querySelector('.p3');
+        p3.onclick=ubahWarnaP3;
+        function ubahWarnaP3(){
+            p3.style.backgroundColor='gray';
+        }
+        // 2. addEventListener()
+        // ini adalah contoh penggunaan event handler menggunakan addEventListener()
+    const p4= document.querySelector('section#b p')
+    p4.addEventListener('click',function(){
+        // memanggil parent dari li
+        const ulParent= document.querySelector('section#b ul');
+        // membuat element dan teks baru
+        const liBaru= document.createElement('li');
+        const liTeksBaru= document.createTextNode('tambah teks');
+        // memasukkan teks baru kedalam element
+        liBaru.appendChild(liTeksBaru)
+        // memasukkan element baru kedalam parent ul di bagian paling akhir
+        ulParent.appendChild(liBaru)
+    })
+    </script>
+</body>
+</html>

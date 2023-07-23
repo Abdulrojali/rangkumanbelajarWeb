@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galeri</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            line-height: 0;
+        }
+        body{
+            background-color: gray;
+            text-align: center;
+            justify-content: center;
+            align-items: center;       
+        }
+        .container{
+            width: 700px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 5px 10px yellow;
+            border-radius: 5px;
+        }
+        .fleximg{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+           
+        }
+        .img-big{
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .img-big img{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        .img-small{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 10px;
+        }
+        .img-small img{
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+        }
+        .img-small img:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .img-big span{
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: uppercase;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 43.5%;
+        }
+        .img-big span:hover{
+            color: red;
+        }
+        nav{
+            padding: 30px 10px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar h3{
+            font-size: 1.5em;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        .navlinks ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+        .navlinks li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 100;
+            font-size: 1em;
+            text-transform: capitalize;
+        }
+        .navlinks li a:hover{
+            border-bottom: 1.5px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar"><h3>Image Galeri</h3></div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">service</a></li>
+
+            </ul>
+        </div>
+    </nav>
+     <div class="container">
+        <div class="fleximg">
+            <div class="img-big">
+                <img class="img-view" src="" alt="">
+                <span>X</span>
+            </div>
+            <div class="img-small">
+                <img src="New folder/img/gajah.png" alt="" class="gajah">
+                <img src="New folder/img/orang.png" alt="" class="orang">
+                <img src="New folder/img/semut.png" alt="" class="semut">
+                <img src="New folder/img/gajah.png" alt="" class="gajah">
+                <img src="New folder/img/orang.png" alt="" class="orang">
+                <img src="New folder/img/semut.png" alt="" class="semut">
+            </div>
+        </div>
+  </div>
+    <script src="imggaleri.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: orange;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+nav h1{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+nav .list ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+nav .list li a{
+    color: black;
+    font-size: 1.1em;
+    font-weight: 150;
+    text-decoration: none;
+}
+nav .list li a:hover{
+    color: white;
+    background-color: red;
+    border: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+main form .age{
+    display: flex;
+    gap: 10px;
+}
+main form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 25px 40px;
+    box-shadow: 0 0 5px 2px gray;
+    background-color: white;
+}
+
+main form input{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0 0 10px;
+}
+main form .numberteks{
+    padding: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+main form .buttonform{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 100;
+}
+main form .buttonform button{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+}
+main form .buttonform button:hover{
+    background-color: red;
+    color: white;
+    border: none;
+}
+main form select{
+    display: inline-block;
+    width: 50px;
+    font-size: .8em;
+}
+footer{
+    padding: 20px 0;
+}
+.aeroAbout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aeroAbout .menu ul,.founder ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+.aeroAbout li a,p{
+    color: black;
+    font-size: 1.1em;
+}
+.aeroAbout .patners ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.aeroAbout .patners li img{
+    display:inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+@media(max-width:600px){
+    .aeroAbout{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .patners ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    main form input{
+        display: inline-block;
+        width: 100%;
+    }
+}

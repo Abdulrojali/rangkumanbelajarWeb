@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            padding: 30px;
+            border-radius: 25px;
+            border: 1px solid black;
+            width: 280px;
+            height: 50px;
+            
+        }
+        .parent img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+        }
+        body{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+        }
+        .parent .close:hover{
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gambar">
+        <div class="content">
+            <span class="nama">abdul rojali</span>
+            <span class="nomor">081319900109</span>
+        </div>
+        <span class="close">X</span>
+    </div>
+    <div class="parent">
+        <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gambar">
+        <div class="content">
+            <span class="nama">abdul rojali</span>
+            <span class="nomor">081319900109</span>
+        </div>
+        <span class="close">X</span>
+    </div>
+    <div class="parent">
+        <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gambar">
+        <div class="content">
+            <span class="nama">abdul rojali</span>
+            <span class="nomor">081319900109</span>
+        </div>
+        <span class="close">X</span>
+    </div>
+    <div class="parent">
+        <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gambar">
+        <div class="content">
+            <span class="nama">abdul rojali</span>
+            <span class="nomor">081319900109</span>
+        </div>
+        <span class="close">X</span>
+    </div>
+    <script src="domTravesal.js"></script>
+</body>
+</html>

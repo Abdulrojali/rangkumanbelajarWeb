@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50% auto;
+        }
+        .container{
+            display: flex;
+           flex-direction: column;
+           text-align: center;
+            gap: 20px;
+            padding: 50px 100px;
+            box-shadow: 0 0 1px 2px gray;
+            border-radius: 5px;
+        }
+        .container h1,#value{
+            font-size: 2.3em;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .btncontainer{
+            display: flex;
+            gap:50px;
+        }
+        .btncontainer button{
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            border: 1px solid black;
+            background-color:white;
+            font-size: 1.2em;
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>counter</h1>
+            <span id="value">0</span>
+            <div class="btncontainer">
+                <button class="btn repeat">repeat</button>
+                <button class="btn push">push</button>
+                <button class="btn clear">clear</button>
+            </div>
+        </div>
+    </main>
+    <script src="counter.js"></script>
+</body>
+</html>
